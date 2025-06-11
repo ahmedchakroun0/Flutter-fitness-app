@@ -79,7 +79,9 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         TextButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.pushNamed(context, "/gender");
+                          },
                           child: const Text(
                             'Get Started',
                             style: TextStyle(
@@ -105,7 +107,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
               controller: controller,
               count: 3,
               effect: const ExpandingDotsEffect(
-                dotColor: Color.fromARGB(255, 222, 18, 18),
+                dotColor: Colors.grey,
                 activeDotColor: Colors.yellow,
                 dotHeight: 10,
                 dotWidth: 10,
