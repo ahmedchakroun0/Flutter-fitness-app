@@ -1,5 +1,7 @@
 import 'dart:io';
 
+import 'package:fitness_app/screens/Authentication/forgot_password.dart';
+import 'package:fitness_app/screens/Authentication/verification.dart';
 import 'package:fitness_app/screens/age_screen.dart';
 import 'package:fitness_app/screens/goal_screen.dart';
 import 'package:fitness_app/screens/height_screen.dart';
@@ -37,7 +39,7 @@ class MyApp extends StatelessWidget {
       },
 
       debugShowCheckedModeBanner: false,
-      home: OnboardingScreen(),
+      home: const Verification(),
     );
   }
 }
